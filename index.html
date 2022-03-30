@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="icon" type="image/x-icon" href="./img/heart.png">
+    <title>Gamerule Ø</title>
 </head>
 <body>
     <!-- Navigation -->
-    <header>
+    <header class="primary-header flex">
+        <a><img src="./img/null.png" alt="website logo" class="logo"></a>
+
+        <!-- aria controls will look for a class -->
+        <button class="toggle-nav" aria-controls="primary-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
         <nav>
-            
+            <ul class="primary-nav flex">
+                <li><a href="#" aria-hidden="true">HOME</a></li>
+                <li><a href="#" aria-hidden="true">SALE</a></li>
+                <li><a href="#" aria-hidden="true">FEATURED</a></li>
+                <li><a href="#" aria-hidden="true">SUPPORT & SERVICES</a></li>
+            </ul>
         </nav>
     </header>
-    
+    <section class="hero hero-img">
+
+    </section>
 </body>
 </html>
