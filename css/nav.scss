@@ -14,6 +14,7 @@ a {
   width: 50px;
 }
 
+/********** NAVIGATION **********/
 .primary-header {
   align-items: center;
   justify-content: space-between;
@@ -22,11 +23,12 @@ a {
   //width: 100%;
 }
 
+//necessary for slide-out nav
 .primary-nav {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Monda", sans-serif;
+  font-family: "Monda", sans-serif;//
   font-weight: 600;
   
   li  a {
@@ -36,6 +38,12 @@ a {
   }
 }
 
+//necessary for slide-out nav for button
+.toggle-nav {
+  display: none;
+}
+
+//not necessary for nav menu
 .sr-only {
   position: absolute;
   width: 1px;
@@ -48,17 +56,8 @@ a {
   border-width: 0;
 }
 
-.toggle-nav {
-  display: none;
-}
-
-@mixin popOutNavigation ($name, $from, $to) {
-  @keyframes #{name} {
-    0% {transform: translate3d($from, 0, 0);}
-    100% {transform: translate3d($to, 0, 0)}
-  }
-}
-
+/********** SLIDE OUT NAVIGATION **********/
+//slide out navigation will be visible until 768px
 @media (max-width: 768px) {
   .primary-header{
     .primary-nav {
@@ -76,23 +75,24 @@ a {
       // transition: transform 350ms ease-out;
     }
 
+    //animation responsible for nav menu to slide out and be seen
     .primary-nav {
       transform: translateX(100%);
       transition: transform 1s ease-in;
     }
 
-
+    //animation responsible for nav menu to slide in and to be hidden
     .primary-nav[data-visible="true"] {
       transform: translateX(0%);
       transition: transform 1s ease-in;
     }
 
-  
+    //responsible for the hamburger menu
     .toggle-nav {
         display: block;
         position: absolute;
         z-index: 9999;
-        background: url("../img/menu.png");
+        background: url("../img/menu.png");//change image for hamburger menu
         background-size: cover;
         background-repeat: no-repeat;
         width: 1.5rem;
@@ -102,5 +102,5 @@ a {
         right: 2rem;
     }
   }
-  
+  //add the JS too
 }
