@@ -91,14 +91,14 @@ body {
   text-align: center;
 }
 
-.featured-items .featured-card .heading1 {
+.featured-items .featured-card .featured-heading1 {
   font-size: 5rem;
   font-weight: 800;
   margin: 0;
   font-family: 'Roboto Slab', serif;
 }
 
-.featured-items .featured-card .subheading {
+.featured-items .featured-card .featured-subheading {
   font-size: 1.25rem;
   font-weight: 300;
   margin: 0;

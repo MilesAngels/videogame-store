@@ -75,13 +75,13 @@ body {
         //width: 100%;
         //justify-content: center;
         text-align: center;
-        .heading1 {
+        .featured-heading1 {
             font-size: 5rem;
             font-weight: 800;
             margin: 0;
             font-family: 'Roboto Slab', serif;
         }
-        .subheading {
+        .featured-subheading {
             font-size: 1.25rem;
             font-weight: 300;
             margin: 0;
@@ -90,7 +90,8 @@ body {
         .featured-img {
             width: 100%;
             height: 100%;
-            
+            //margin-top:-30px;
+            //z-index: -22;
         }
     }
 }
