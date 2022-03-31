@@ -74,18 +74,18 @@ a {
   .primary-header .primary-nav {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 3s ease-in;
-    transition: -webkit-transform 3s ease-in;
-    transition: transform 3s ease-in;
-    transition: transform 3s ease-in, -webkit-transform 3s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
   }
   .primary-header .primary-nav[data-visible="true"] {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transition: -webkit-transform 3s ease-out;
-    transition: -webkit-transform 3s ease-out;
-    transition: transform 3s ease-out;
-    transition: transform 3s ease-out, -webkit-transform 3s ease-out;
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
   }
   .primary-header .toggle-nav {
     display: block;
