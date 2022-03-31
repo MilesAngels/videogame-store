@@ -71,7 +71,7 @@ body {
     .featured-card {
         height: 50vh;
         width: 80vw;
-        margin: 10%;
+        margin: 20% 10%;
         //width: 100%;
         //justify-content: center;
         text-align: center;
@@ -93,6 +93,28 @@ body {
             //margin-top:-30px;
             //z-index: -22;
         }
+        .featured-article {
+            margin: 0;
+            font-family: "Monda", sans-serif;
+        }
+    }
+}
+
+.banner1 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/razer-blackwidow-v3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    .banner1-text {
+        color: whitesmoke;
+        position: absolute;
+        bottom: 2vh;
+        left: 3vh;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+        font-size: 1.25rem;
     }
 }
 
