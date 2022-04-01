@@ -109,7 +109,7 @@ body {
     height: 40vh;
     width: 100%;
     background-image: url("../img/razer-blackwidow-v3.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #111;
     position: relative;
@@ -124,6 +124,16 @@ body {
     }
 }
 
-@media (max-width:480px) {
-    
+@media (min-width:768px) {
+    .hero {
+        height: 90vh;
+        .hero-text {
+            width: 50%;
+            //padding-top: 20%;
+        }
+        .hero-img {
+            width: 50%;
+            background-size: cover;
+        }
+    }
 }
