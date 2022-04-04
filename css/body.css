@@ -47,7 +47,7 @@ body {
   height: 100vh;
   color: whitesmoke;
   position: relative;
-  background-color: #43485E;
+  background-color: #ce5e69;
   text-align: center;
 }
 
@@ -61,18 +61,21 @@ body {
   text-align: center;
   font-size: 10vh;
   font-family: 'Roboto Slab', serif;
+  text-shadow: 3px 4px #000;
 }
 
 .hero .hero-text h2 {
   font-size: 4vh;
   font-family: "Monda", sans-serif;
   font-weight: 300;
+  text-shadow: 2px 2px #000;
 }
 
 .hero .hero-text h3 {
   font-size: 3vh;
   font-family: "Monda", sans-serif;
   font-weight: 300;
+  text-shadow: 2px 2px #000;
 }
 
 .hero .hero-img {
@@ -120,11 +123,8 @@ body {
 }
 
 .banner1 {
-  height: 40vh;
+  height: calc(100vh - 40vh);
   width: 100%;
-  background-image: url("../img/razer-blackwidow-v3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   background-color: #111;
   position: relative;
 }
@@ -137,6 +137,12 @@ body {
   font-family: 'Roboto Slab', serif;
   text-align: left;
   font-size: 1.25rem;
+}
+
+.banner1-image {
+  background-image: url("../img/razer-blackwidow-v3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
