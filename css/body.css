@@ -47,7 +47,7 @@ body {
   height: 100vh;
   color: whitesmoke;
   position: relative;
-  background-color: #ce5e69;
+  background-color: #43485E;
   text-align: center;
 }
 
@@ -123,10 +123,16 @@ body {
 .featured-items .featured-card-one .featured-article, .featured-items .featured-card-two .featured-article {
   margin: 0;
   font-family: "Monda", sans-serif;
+  padding: 5px 0;
 }
 
 .featured-items .featured-card-one .row, .featured-items .featured-card-two .row {
   margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 15px;
 }
 
 .featured-items .featured-card-one .row li img, .featured-items .featured-card-two .row li img {
