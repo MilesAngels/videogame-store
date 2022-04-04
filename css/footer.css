@@ -72,6 +72,9 @@ footer .social-media-text {
 }
 
 @media (min-width: 1200px) {
+  footer {
+    height: 5vh;
+  }
   footer .footer-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
