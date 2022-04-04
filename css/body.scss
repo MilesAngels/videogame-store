@@ -79,7 +79,7 @@ body {
 }
 
 .featured-items {
-    //margin-top: 35vh;
+    margin-top: 30vh;
     color: whitesmoke;
     display: grid;
     grid-template-columns: auto;
@@ -226,6 +226,18 @@ $banner-height: calc(100vh - 40vh);
                 }
         
             }
+        }
+    }
+    .banner1 {
+        .banner1-text {
+            color: whitesmoke;
+            position: absolute;
+            top: 20vh;
+            left: 55vw;
+            font-family: 'Roboto Slab', serif;
+            text-align: left;
+            font-size: 1.75rem;
+            line-height: 2.5rem;
         }
     }
 }

@@ -20,13 +20,13 @@ footer .footer-nav {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #73778b;
   padding-bottom: 20px;
 }
 
 footer .footer-nav li a {
-  color: whitesmoke;
-  font-size: 1.1rem;
+  color: #73778b;
+  font-size: 1rem;
   font-family: "Monda", sans-serif;
   margin: 0 2px;
 }
@@ -65,8 +65,24 @@ footer .social-media ul .fa {
 }
 
 footer .social-media-text {
+  color: #73778b;
   font-size: 2rem;
   font-weight: 800;
   font-family: 'Roboto Slab', serif;
+}
+
+@media (min-width: 1200px) {
+  footer .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .footer-nav li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

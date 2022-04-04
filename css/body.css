@@ -88,6 +88,7 @@ body {
 }
 
 .featured-items {
+  margin-top: 30vh;
   color: whitesmoke;
   display: -ms-grid;
   display: grid;
@@ -224,6 +225,16 @@ body {
     max-width: 350px !important;
     max-height: 250px;
     padding: 35% 0;
+  }
+  .banner1 .banner1-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 20vh;
+    left: 55vw;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
   }
 }
 /*# sourceMappingURL=body.css.map */
