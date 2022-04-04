@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    // background: #000 !important;
+    // color: #0f0 !important;
+    // outline: solid #f00 1px !important;
 }
 
 body {
@@ -20,6 +23,7 @@ body {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    width: 50%;
 }
 
 .hero {
@@ -75,7 +79,7 @@ body {
 }
 
 .featured-items {
-    margin-top: 35vh;
+    //margin-top: 35vh;
     color: whitesmoke;
     display: grid;
     grid-template-columns: auto;
@@ -104,8 +108,7 @@ body {
         }
         .featured-img {
             width: 100%;
-            height: 100%;
-            
+            height: 100%;  
         }
         .featured-article {
             margin: 0;
@@ -153,16 +156,18 @@ $banner-height: calc(100vh - 40vh);
     background-repeat: no-repeat;
 }
 
-@media (min-width:768px) {
+//$hero-height: calc(100vh - 10vh);
+@media (min-width:768px) and (max-width:1199.87px) {
     .hero {
-        height: 150vh;
-        
+        height: 100vh;
+        display: flex;
         .hero-text {
-            //width: 50%;
-            height: 30vh;
+            margin-top: 35%;
+            width: 45%;
         }
         .hero-img {
-            //width: 50%;
+            width: 55%;
+            //object-fit: contain;
             background-size: cover;
         }
     }
@@ -172,10 +177,55 @@ $banner-height: calc(100vh - 40vh);
     }
     .featured-items {
         //flex-direction: row;
-        .featured-card {
-            width: 50% !important;
-    
-        }
+        margin: 0;
     }
 
+}
+
+@media (min-width:1200px){
+    .hero {
+        height: 100vh;
+        .hero-text {
+            width: 35%;
+            margin-top: 25%;
+            //height: 30vh;
+        }
+        .hero-img {
+            width: 65%;
+            //object-fit: contain;
+            background-size: cover;
+        }
+    }
+    .featured-items {
+        margin: 2%;
+        grid-template-columns: auto auto;
+        height: 80vh;
+        .featured-card-one {
+            width: 100%;
+            margin: 10% 0 0 0;
+        }
+        .featured-card-two {
+            width: 100%;
+            margin: 5% 0;
+            .bottom-text {
+                padding: 15% 0 0 0;
+            }
+        }
+        .row {
+            //justify-content: space-around;
+            grid-template-columns: repeat(3, minmax(150px, 350px)) !important;
+            grid-template-rows: 150px;
+            //text-align: center;
+            li {
+                
+                .one, .two, .three{
+                    max-width: 350px !important;
+                    max-height: 250px;
+                    padding: 35% 0;
+                    //align-items: center;
+                }
+        
+            }
+        }
+    }
 }
