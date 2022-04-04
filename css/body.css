@@ -89,37 +89,48 @@ body {
 .featured-items {
   margin-top: 35vh;
   color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  gap: 10px;
 }
 
-.featured-items .featured-card {
-  height: 50vh;
-  width: 80vw;
-  margin: 20% 10%;
+.featured-items .featured-card-one, .featured-items .featured-card-two {
   text-align: center;
+  margin: 10%;
 }
 
-.featured-items .featured-card .featured-heading1 {
+.featured-items .featured-card-one .featured-heading1, .featured-items .featured-card-two .featured-heading1 {
   font-size: 5rem;
   font-weight: 800;
   margin: 0;
   font-family: 'Roboto Slab', serif;
 }
 
-.featured-items .featured-card .featured-subheading {
+.featured-items .featured-card-one .featured-subheading, .featured-items .featured-card-two .featured-subheading {
   font-size: 1.25rem;
   font-weight: 300;
   margin: 0;
   font-family: "Monda", sans-serif;
 }
 
-.featured-items .featured-card .featured-img {
+.featured-items .featured-card-one .featured-img, .featured-items .featured-card-two .featured-img {
   width: 100%;
   height: 100%;
 }
 
-.featured-items .featured-card .featured-article {
+.featured-items .featured-card-one .featured-article, .featured-items .featured-card-two .featured-article {
   margin: 0;
   font-family: "Monda", sans-serif;
+}
+
+.featured-items .featured-card-one .row, .featured-items .featured-card-two .row {
+  margin: 0;
+}
+
+.featured-items .featured-card-one .row li img, .featured-items .featured-card-two .row li img {
+  width: 100%;
 }
 
 .banner1 {

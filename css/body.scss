@@ -77,14 +77,18 @@ body {
 .featured-items {
     margin-top: 35vh;
     color: whitesmoke;
-    
-    .featured-card {
-        height: 50vh;
-        width: 80vw;
-        margin: 20% 10%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    //grid-auto-rows: minmax(500px, auto);
+    .featured-card-one, .featured-card-two {
+        // height: 50vh;
+        // width: 80vw;
+        // margin: 20% 10%;
         //width: 100%;
         //justify-content: center;
         text-align: center;
+        margin: 10%;
         .featured-heading1 {
             font-size: 5rem;
             font-weight: 800;
@@ -100,14 +104,23 @@ body {
         .featured-img {
             width: 100%;
             height: 100%;
-            //margin-top:-30px;
-            //z-index: -22;
+            
         }
         .featured-article {
             margin: 0;
-            font-family: "Monda", sans-serif;
+            font-family: "Monda", sans-serif;  
         }
+
+        .row {
+            margin: 0;
+            li img {
+                width: 100%;
+                //height: 300px;
+            }
+        }
+
     }
+
 }
 
 $banner-height: calc(100vh - 40vh);
