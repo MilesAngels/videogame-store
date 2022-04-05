@@ -192,7 +192,7 @@ body {
   }
   .hero .hero-text {
     width: 35%;
-    margin-top: 25%;
+    margin-top: 15%;
   }
   .hero .hero-img {
     width: 65%;
@@ -202,7 +202,7 @@ body {
     margin: 2%;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-    height: 80vh;
+    height: 100vh;
   }
   .featured-items .featured-card-one {
     width: 100%;
@@ -212,19 +212,20 @@ body {
     width: 100%;
     margin: 5% 0;
   }
-  .featured-items .featured-card-two .bottom-text {
-    padding: 15% 0 0 0;
+  .featured-items .featured-card-two .featured-article {
+    padding-bottom: 10%;
   }
   .featured-items .row {
     -ms-grid-columns: (minmax(150px, 350px))[3] !important;
         grid-template-columns: repeat(3, minmax(150px, 350px)) !important;
-    -ms-grid-rows: 150px;
-        grid-template-rows: 150px;
+    -ms-grid-rows: minmax(100px, max-content);
+        grid-template-rows: minmax(100px, -webkit-max-content);
+        grid-template-rows: minmax(100px, max-content);
+    grid-gap: 20px;
   }
-  .featured-items .row li .one, .featured-items .row li .two, .featured-items .row li .three {
+  .featured-items .row li .one, .featured-items .row li .two, .featured-items .row li .three, .featured-items .row li .four, .featured-items .row li .five, .featured-items .row li .six {
     max-width: 350px !important;
     max-height: 250px;
-    padding: 35% 0;
   }
   .banner1 .banner1-text {
     color: whitesmoke;
