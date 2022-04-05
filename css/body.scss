@@ -156,6 +156,19 @@ $banner-height: calc(100vh - 40vh);
     background-repeat: no-repeat;
 }
 
+//Hover effects on Images
+    .grow img{
+        transition: 1s ease;
+    }
+    .grow img:hover {
+        //position: relative;
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+    }
+
+
 //$hero-height: calc(100vh - 10vh);
 @media (min-width:768px) and (max-width:1199.87px) {
     .hero {
@@ -221,16 +234,20 @@ $banner-height: calc(100vh - 40vh);
                 
                 .one, .two, .three, .four, .five, .six{
                     max-width: 350px !important;
-                    max-height: 250px;
+                    max-height: 200px;
+                    //height: 150px;
                     //padding: 20% 0 0 0;
                     //align-items: center;
                 }
-                // .four {
-                //     max-width: 350px !important;
-                //     max-height: 250px;
-                //     padding: 10% 0 5% 0;
-                // }
         
+            }
+            .grow img:hover {
+                //position: absolute;
+                z-index: 11;
+                -webkit-transform: scale(2);
+                -ms-transform: scale(2);
+                transform: scale(2);
+                transition: 1s ease;
             }
         }
     }

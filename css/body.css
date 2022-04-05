@@ -163,6 +163,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.grow img {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.grow img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
 @media (min-width: 768px) and (max-width: 1199.87px) {
   .hero {
     height: 100vh;
@@ -225,7 +237,14 @@ body {
   }
   .featured-items .row li .one, .featured-items .row li .two, .featured-items .row li .three, .featured-items .row li .four, .featured-items .row li .five, .featured-items .row li .six {
     max-width: 350px !important;
-    max-height: 250px;
+    max-height: 200px;
+  }
+  .featured-items .row .grow img:hover {
+    z-index: 11;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
   }
   .banner1 .banner1-text {
     color: whitesmoke;
