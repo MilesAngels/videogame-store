@@ -8,14 +8,13 @@ li, a {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, 1.75rem);
 }
 
-.logo {
-  width: 50px;
-}
 
 /********** NAVIGATION **********/
+//conatiner of nav element
+//base
 .primary-header {
   align-items: center;
   justify-content: space-between;
@@ -25,6 +24,7 @@ li, a {
 }
 
 //necessary for slide-out nav
+//placed in the ul element within the nav element to be able to select li and a
 .primary-nav {
   list-style: none;
   padding: 0;
@@ -32,6 +32,8 @@ li, a {
   font-family: "Monda", sans-serif;//
   font-weight: 600;
   
+  //selecting li and a elements to change it's colors and add depth by 
+  //using text-shadow
   li  a {
     //color: #931656;
     color: whitesmoke;
@@ -39,7 +41,14 @@ li, a {
   }
 }
 
+//set logo width in the navigation
+.logo {
+  width: 50px;
+}
+
 //necessary for slide-out nav for button
+//added as the toggle button to make the navigation slide out
+//in smaller screens
 .toggle-nav {
   display: none;
 }
@@ -59,8 +68,11 @@ li, a {
 
 /********** SLIDE OUT NAVIGATION **********/
 //slide out navigation will be visible until 768px
+
+/********** MEDIA QUERIES **********/
 @media (max-width: 768px) {
   .primary-header{
+    //adding necessary css fro slide out nav bar
     .primary-nav {
       --gap: 2em;
       position: fixed;
@@ -106,3 +118,4 @@ li, a {
   }
   //add the JS too
 }
+/********** END OF MEDIA QUERIES **********/
