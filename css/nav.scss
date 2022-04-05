@@ -19,7 +19,7 @@ li, a {
 .primary-header {
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 1rem 2rem;
   //background-color: #111;
   //width: 100%;
 }
@@ -67,7 +67,7 @@ li, a {
       z-index: 1000;
       inset: 0 0 0 40%;
       flex-direction: column;
-      padding: 20vh 2em;
+      padding: 20vh 3em;
       font-size: 1.35rem;
       //background: lighten(steelblue, 100);
       background: rgba(#8C92AC, 0.5);
