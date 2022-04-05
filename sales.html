@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/body.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sales.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./img/heart.png" />
+    <title>Gamerule Ø</title>
+  </head>
+  <body>
+    <!-- Start of Navigation -->
+    <header class="primary-header flex">
+      <a href="index.html"
+        ><img src="./img/null.png" alt="website logo" class="logo"
+      /></a>
+      <!-- aria controls will look for a class -->
+      <button
+        class="toggle-nav"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav>
+        <ul class="primary-nav flex" data-visible="false">
+          <li><a href="index.html" aria-hidden="true">HOME</a></li>
+          <li><a href="sales.html" aria-hidden="true">SALE</a></li>
+          <li><a href="#" aria-hidden="true">FEATURED</a></li>
+          <li><a href="#" aria-hidden="true">SUPPORT & SERVICES</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Navigation -->
+    <!-- Start of Sale Items Section -->
+    <section class="items-wrapper">
+      <div class="sale-items">
+        <h1>THIS IS A TEXT!</h1>
+        <div class="item-cards">Hello</div>
+        <div class="item-cards">Hello</div>
+      </div>
+    </section>
+    <!-- End of Sale Items Section -->
+    <!-- Start of Footer Section -->
+    <footer>
+      <ul class="footer-nav" data-visible="false">
+        <li><a href="#" aria-hidden="true">Home</a></li>
+        <li><a href="#" aria-hidden="true">Sale</a></li>
+        <li><a href="#" aria-hidden="true">Featured</a></li>
+        <li><a href="#" aria-hidden="true">Support & Services</a></li>
+      </ul>
+      <div class="social-media social-media-text">
+        <p>FOLLOW US</p>
+        <ul class="row">
+          <li><a hreflang="#" class="fa fa-facebook"></a></li>
+          <li><a hreflang="#" class="fa fa-twitter"></a></li>
+          <li><a hreflang="#" class="fa fa-instagram"></a></li>
+          <li><a hreflang="#" class="fa fa-linkedin"></a></li>
+          <li><a hreflang="#" class="fa fa-pinterest"></a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+    <script src="./js/nav.js"></script>
+  </body>
+</html>
