@@ -240,9 +240,8 @@ body {
     max-height: 200px;
   }
   .featured-items .row .grow img:hover {
-    z-index: 11;
-    -webkit-transform: scale(2);
-    transform: scale(2);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     -webkit-transition: 1s ease;
     transition: 1s ease;
   }
