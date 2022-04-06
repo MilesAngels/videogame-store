@@ -1,4 +1,14 @@
 /********** Sale Items Section **********/
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+h1 {
+  font-family: "Roboto Slab", serif;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 2.75rem;
+  margin: 5% 0;
+}
+
 .items-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,10 +30,6 @@
   text-align: center;
 }
 
-.items-wrapper .sale-items h1 {
-  font-family: 'Roboto Slab', serif;
-}
-
 .items-wrapper .sale-items .item-cards::before {
   content: "";
   -webkit-filter: blur(2rem);
@@ -42,16 +48,20 @@
 }
 
 .items-wrapper .sale-items .item-cards img {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 300px;
   height: 200px;
   border-radius: 30px;
   padding-bottom: 10px;
 }
 
+.items-wrapper .sale-items .item-cards h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
 .items-wrapper .sale-items .item-cards p {
-  font-weight: 200;
+  font-weight: 100;
+  font-family: "Monda", sans-serif;
 }
 
 .items-wrapper .sale-items .item-cards span {
@@ -70,4 +80,18 @@
 }
 
 /********** End of Sale Items Section **********/
+@media (min-width: 768px) and (max-width: 1199.87px) {
+  .items-wrapper .sale-items {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .items-wrapper .sale-items {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+}
 /*# sourceMappingURL=sales.css.map */

@@ -18,7 +18,10 @@ body {
 }
 /********** END OF RESETS **********/
 
-
+/********** TYPOGRAPHY **********/
+$roboto: 'Roboto Slab', serif;
+$monda: "Monda", sans-serif;
+/********** END OF TYPOGRAPHY **********/
 //will be reused
 .row {
     display: flex;
@@ -51,18 +54,18 @@ body {
             margin: 0;
             text-align: center;
             font-size: 10vh;
-            font-family: 'Roboto Slab', serif;
+            font-family: $roboto;
             text-shadow: 3px 4px #000;
         }
         h2 {
             font-size: 4vh;
-            font-family: "Monda", sans-serif;
+            font-family: $monda;
             font-weight: 300;
             text-shadow: 2px 2px #000;
         }
         h3 {
             font-size: 3vh;
-            font-family: "Monda", sans-serif;
+            font-family: $monda;
             font-weight: 300;
             text-shadow: 2px 2px #000;
         }
@@ -103,14 +106,14 @@ body {
             font-size: 5rem;
             font-weight: 800;
             margin: 0;
-            font-family: 'Roboto Slab', serif;
+            font-family: $roboto;
         }
         .featured-subheading {
             font-size: 1.25rem;
             font-weight: 300;
             margin: 0;
             //padding: 5px 0;
-            font-family: "Monda", sans-serif;
+            font-family: $monda;
         }
         .featured-img {
             width: 100%;
@@ -118,7 +121,7 @@ body {
         }
         .featured-article {
             margin: 0;
-            font-family: "Monda", sans-serif;  
+            font-family: $monda;  
             padding: 5px 0;
         }
 
@@ -162,7 +165,7 @@ $banner-height: calc(100vh - 40vh);
         position: absolute;
         bottom: 2vh;
         left: 3vh;
-        font-family: 'Roboto Slab', serif;
+        font-family: $roboto;
         text-align: left;
         font-size: 1.25rem;
     }
@@ -195,6 +198,8 @@ $banner-height: calc(100vh - 40vh);
         width: 300px;
         height: 300px;
         border: 10px solid whitesmoke;
+        //outline: 2px solid #fc3c51;
+        box-shadow: 0px 0px 30px #fc3c51;
         transform: rotate(45deg);
     
         .banner2-sale {
@@ -215,7 +220,17 @@ $banner-height: calc(100vh - 40vh);
                 color: whitesmoke;
                 font-size: 10vh;
                 text-align: center;
-                font-family: 'Roboto Slab', serif;
+                font-family: $roboto;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #111,
+                0 0 42px #fc3c51,
+                0 0 82px #fc3c51,
+                0 0 92px #fc3c51,
+                0 0 102px #fc3c51,
+                0 0 151px #fc3c51;
+                //outline: 1px solid whitesmoke;
                 padding: 15% 5%;
             }
         }
@@ -230,12 +245,12 @@ $banner-height: calc(100vh - 40vh);
         }
 
         h4 {
-            font-family: 'Roboto Slab', serif;
+            font-family: $roboto;
             font-size: 1.5em;
             line-height: 2em;
         }
         p {
-            font-family: "Monda", sans-serif;
+            font-family: $monda;
             line-height: 1.2em;
         }
         p a {
@@ -338,7 +353,7 @@ $banner-height: calc(100vh - 40vh);
             position: absolute;
             top: 20vh;
             left: 55vw;
-            font-family: 'Roboto Slab', serif;
+            font-family: $roboto;
             text-align: left;
             font-size: 1.75rem;
             line-height: 2.5rem;

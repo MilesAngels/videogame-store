@@ -1,4 +1,17 @@
 /********** Sale Items Section **********/
+/********** TYPOGRAPHY **********/
+$roboto: 'Roboto Slab', serif;
+$monda: "Monda", sans-serif;
+/********** END OF TYPOGRAPHY **********/
+h1 {
+    font-family: $roboto;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 2.75rem;
+    margin: 5% 0;
+    //border-bottom: 2px solid;
+}
+
 .items-wrapper {
     display: flex;
     justify-content: center;
@@ -10,9 +23,7 @@
         grid-gap: 20px;
         margin: 0 auto;
         text-align: center;
-        h1 {
-            font-family: 'Roboto Slab', serif;
-        }
+        
         .item-cards::before{
             content: "";
             filter: blur(2rem);
@@ -28,13 +39,18 @@
             padding: 15px;
             img {
                 //filter: blur(0);
-                width: fit-content;
+                width: 300px;
                 height: 200px;
                 border-radius: 30px;
                 padding-bottom: 10px;
             }
+            h3 {
+                font-family: $roboto;
+                font-weight: 300;
+            }
             p {
-                font-weight: 200;
+                font-weight: 100;
+                font-family: $monda;
             }
             span {
                 text-decoration: line-through;
@@ -54,3 +70,20 @@
     }
 }
 /********** End of Sale Items Section **********/
+
+@media (min-width: 768px) and (max-width: 1199.87px){
+    .items-wrapper {
+        .sale-items {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .items-wrapper {
+        .sale-items {
+            grid-template-columns: auto auto auto;
+            grid-gap: 30px;
+        }
+    }
+}
