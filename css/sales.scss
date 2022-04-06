@@ -15,8 +15,9 @@
         }
         .item-cards::before{
             content: "";
-            backdrop-filter: blur(2rem);
-            background-image: linear-gradient(to right bottom, #111111, #1b1b1e, #25242c, #2e2f3a, #373949, #373949, #373949, #373949, #2e2f3a, #25242c, #1b1b1e, #111111);
+            filter: blur(2rem);
+            opacity: 0.1;
+            //background-image: linear-gradient(to right bottom, #111111, #1b1b1e, #25242c, #2e2f3a, #373949, #373949, #373949, #373949, #2e2f3a, #25242c, #1b1b1e, #111111);
         }
         .item-cards {
             width: 300px;
@@ -26,7 +27,7 @@
             line-height: 2.25rem;
             padding: 15px;
             img {
-                filter: blur(0);
+                //filter: blur(0);
                 width: fit-content;
                 height: 200px;
                 border-radius: 30px;

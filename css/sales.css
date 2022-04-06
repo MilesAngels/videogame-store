@@ -26,10 +26,9 @@
 
 .items-wrapper .sale-items .item-cards::before {
   content: "";
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#111111), color-stop(#1b1b1e), color-stop(#25242c), color-stop(#2e2f3a), color-stop(#373949), color-stop(#373949), color-stop(#373949), color-stop(#373949), color-stop(#2e2f3a), color-stop(#25242c), color-stop(#1b1b1e), to(#111111));
-  background-image: linear-gradient(to right bottom, #111111, #1b1b1e, #25242c, #2e2f3a, #373949, #373949, #373949, #373949, #2e2f3a, #25242c, #1b1b1e, #111111);
+  -webkit-filter: blur(2rem);
+          filter: blur(2rem);
+  opacity: 0.1;
 }
 
 .items-wrapper .sale-items .item-cards {
@@ -43,8 +42,6 @@
 }
 
 .items-wrapper .sale-items .item-cards img {
-  -webkit-filter: blur(0);
-          filter: blur(0);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
