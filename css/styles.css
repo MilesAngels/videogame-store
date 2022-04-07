@@ -1,0 +1,776 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: var(--gap, 1.75rem);
+}
+
+/********** NAVIGATION **********/
+.primary-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.primary-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Monda", sans-serif;
+  font-weight: 600;
+}
+
+.primary-nav li a {
+  display: inline-block;
+  color: whitesmoke;
+  text-shadow: 2px 2px #000;
+}
+
+.primary-nav li a::after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px whitesmoke;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.primary-nav li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.logo {
+  width: 50px;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/********** SLIDE OUT NAVIGATION **********/
+/********** MEDIA QUERIES **********/
+@media (max-width: 768px) {
+  .primary-header .primary-nav {
+    --gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20vh 3em;
+    font-size: 1.35rem;
+    background: rgba(140, 146, 172, 0.5);
+    -webkit-backdrop-filter: blur(0.3rem);
+            backdrop-filter: blur(0.3rem);
+  }
+  .primary-header .primary-nav {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  }
+  .primary-header .primary-nav[data-visible="true"] {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: -webkit-transform 1s ease-in;
+    transition: -webkit-transform 1s ease-in;
+    transition: transform 1s ease-in;
+    transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  }
+  .primary-header .toggle-nav {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: url("../img/menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.75rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+/********** END OF MEDIA QUERIES **********/
+/********** RESETS **********/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/********** END OF RESETS **********/
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+/********** HERO SECTION **********/
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: whitesmoke;
+  position: relative;
+  background-color: #43485E;
+  text-align: center;
+}
+
+.hero .hero-text {
+  margin: 0 auto;
+  padding: 3vh 0;
+}
+
+.hero .hero-text h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 3px 4px #000;
+}
+
+.hero .hero-text h2 {
+  font-size: 4vh;
+  font-family: "Monda", sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px #000;
+}
+
+.hero .hero-text h3 {
+  font-size: 3vh;
+  font-family: "Monda", sans-serif;
+  font-weight: 300;
+  text-shadow: 2px 2px #000;
+}
+
+.hero .hero-img {
+  background-image: url("../img/buildpc.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/********** END OF HERO SECTION **********/
+/********** FEATURED SECTION **********/
+.featured-items {
+  margin-top: 30vh;
+  color: whitesmoke;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  gap: 10px;
+}
+
+.featured-items .featured-card-one, .featured-items .featured-card-two {
+  text-align: center;
+  margin: 10%;
+}
+
+.featured-items .featured-card-one .featured-heading1, .featured-items .featured-card-two .featured-heading1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+.featured-items .featured-card-one .featured-subheading, .featured-items .featured-card-two .featured-subheading {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 0;
+  font-family: "Monda", sans-serif;
+}
+
+.featured-items .featured-card-one .featured-img, .featured-items .featured-card-two .featured-img {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-items .featured-card-one .featured-article, .featured-items .featured-card-two .featured-article {
+  margin: 0;
+  font-family: "Monda", sans-serif;
+  padding: 5px 0;
+}
+
+.featured-items .featured-card-one .row, .featured-items .featured-card-two .row {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 15px;
+}
+
+.featured-items .featured-card-one .row li img, .featured-items .featured-card-two .row li img {
+  width: 100%;
+}
+
+.featured-items .featured-card-one .grow img, .featured-items .featured-card-two .grow img {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.featured-items .featured-card-one .grow img:hover, .featured-items .featured-card-two .grow img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+/********** END OF FEATURED SECTION **********/
+/********** BANNER 1 SECTION **********/
+.banner1 {
+  height: calc(100vh - 40vh);
+  width: 100%;
+  background-color: #111;
+  position: relative;
+}
+
+.banner1 .banner1-text {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 2vh;
+  left: 3vh;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.banner1-image {
+  background-image: url("../img/razer-blackwidow-v3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/********** END OF BANNER 1 SECTION **********/
+/********** BANNER 2 SECTION **********/
+.banner2 {
+  height: calc(100vh - 40vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  -webkit-filter: grayscale(0.5) !important;
+          filter: grayscale(0.5) !important;
+  background-image: url("../img/5570834.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner2 .outer-diamond {
+  z-index: 3;
+  width: 300px;
+  height: 300px;
+  border: 10px solid whitesmoke;
+  -webkit-box-shadow: 0px 0px 30px #fc3c51;
+          box-shadow: 0px 0px 30px #fc3c51;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.banner2 .outer-diamond .banner2-sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  width: 250px;
+  height: 250px;
+  border: 3px solid #43485E;
+  outline: 1px solid whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8%;
+}
+
+.banner2 .outer-diamond .banner2-sale p {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 4;
+  color: whitesmoke;
+  font-size: 10vh;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  text-shadow: 0 0 7px #fff,
+ 0 0 10px #111,
+ 0 0 21px #111,
+ 0 0 42px #fc3c51,
+ 0 0 82px #fc3c51,
+ 0 0 92px #fc3c51,
+ 0 0 102px #fc3c51,
+ 0 0 151px #fc3c51;
+  padding: 15% 5%;
+}
+
+.banner2 .banner2-text {
+  color: whitesmoke;
+  margin: 15vw 5vw 0 5vw;
+}
+
+.banner2 .banner2-text h4, .banner2 .banner2-text p {
+  text-align: center;
+}
+
+.banner2 .banner2-text h4 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+.banner2 .banner2-text p {
+  font-family: "Monda", sans-serif;
+  line-height: 1.2em;
+}
+
+.banner2 .banner2-text p a {
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+
+/********** END OF BANNER 2 SECTION **********/
+/********** MEDIA QUERIES **********/
+@media (min-width: 768px) and (max-width: 1199.87px) {
+  .hero {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .hero-text {
+    margin-top: 35%;
+    width: 45%;
+  }
+  .hero .hero-img {
+    width: 55%;
+    background-size: cover;
+  }
+  .banner1 {
+    height: 80vh;
+  }
+  .featured-items {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero .hero-text {
+    width: 35%;
+    margin-top: 15%;
+  }
+  .hero .hero-img {
+    width: 65%;
+    background-size: cover;
+  }
+  .featured-items {
+    margin: 2%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .featured-items .featured-card-one {
+    width: 100%;
+    margin: 10% 0 0 0;
+  }
+  .featured-items .featured-card-two {
+    width: 100%;
+    margin: 5% 0;
+  }
+  .featured-items .featured-card-two .featured-article {
+    padding-bottom: 10%;
+  }
+  .featured-items .row {
+    -ms-grid-columns: (minmax(150px, 350px));
+        grid-template-columns: repeat(2, minmax(150px, 350px)) !important;
+    -ms-grid-rows: minmax(100px, max-content);
+        grid-template-rows: minmax(100px, -webkit-max-content);
+        grid-template-rows: minmax(100px, max-content);
+    grid-gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featured-items .row li .one, .featured-items .row li .two, .featured-items .row li .three, .featured-items .row li .four, .featured-items .row li .five, .featured-items .row li .six {
+    max-width: 350px !important;
+    max-height: 200px;
+  }
+  .featured-items .row .grow img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  .banner1 .banner1-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 20vh;
+    left: 55vw;
+    font-family: "Roboto Slab", serif;
+    text-align: left;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .banner2 {
+    padding-top: 10%;
+  }
+  .banner2 .banner2-text {
+    margin: 100px 0;
+  }
+}
+
+/********** END OF MEDIA QUERIES **********/
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+/********** FOOTER SECTION **********/
+footer {
+  width: 100%;
+  height: 25vh;
+  color: whitesmoke;
+  margin: 10% auto;
+}
+
+footer .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  line-height: 1.75rem;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #8C92AC;
+  padding-bottom: 20px;
+}
+
+footer .footer-nav li a {
+  color: #8C92AC;
+  font-size: 1rem;
+  font-family: "Monda", sans-serif;
+  margin: 0 2px;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  line-height: 1.75rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .social-media p {
+  margin: 30px 0 0 0;
+}
+
+footer .social-media ul {
+  padding: 0;
+  line-height: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-media ul .fa {
+  padding: 20px 20px;
+  font-size: 1.5rem;
+}
+
+footer .social-media-text {
+  color: #8C92AC;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Roboto Slab", serif;
+}
+
+/********** END OF FOOTER SECTION **********/
+/********** MEDIA QUERIES **********/
+@media (min-width: 1200px) {
+  footer {
+    height: 5vh;
+  }
+  footer .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .footer-nav li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10px;
+  }
+}
+
+/********** END OF MEDIA QUERIES **********/
+/********** Sale Items Section **********/
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+h1 {
+  font-family: "Roboto Slab", serif;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 2.75rem;
+  margin: 5% 0;
+}
+
+.items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+.items-wrapper .sale-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.items-wrapper .sale-items .item-cards::before {
+  content: "";
+  -webkit-filter: blur(2rem);
+          filter: blur(2rem);
+  opacity: 0.1;
+}
+
+.items-wrapper .sale-items .item-cards {
+  width: 300px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#111111), color-stop(#1b1b1e), color-stop(#25242c), color-stop(#2e2f3a), color-stop(#373949), color-stop(#373949), color-stop(#373949), color-stop(#373949), color-stop(#2e2f3a), color-stop(#25242c), color-stop(#1b1b1e), to(#111111));
+  background-image: linear-gradient(to right bottom, #111111, #1b1b1e, #25242c, #2e2f3a, #373949, #373949, #373949, #373949, #2e2f3a, #25242c, #1b1b1e, #111111);
+  border-radius: 30px;
+  line-height: 2.25rem;
+  padding: 15px;
+}
+
+.items-wrapper .sale-items .item-cards img {
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  padding-bottom: 10px;
+}
+
+.items-wrapper .sale-items .item-cards h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+.items-wrapper .sale-items .item-cards p {
+  font-weight: 100;
+  font-family: "Monda", sans-serif;
+}
+
+.items-wrapper .sale-items .item-cards span {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2em;
+}
+
+.items-wrapper .sale-items .item-cards .shopping-cart {
+  display: inline-block;
+  padding: 10px;
+  width: 120px;
+  color: whitesmoke;
+  border-radius: 15px;
+  background-color: #111;
+  border: none;
+  font-style: "Monda", sans-serif;
+}
+
+.items-wrapper .sale-items .item-cards:hover {
+  -webkit-box-shadow: 0 0 7px #fff,
+ 0 0 3px #fff0f5,
+ 0 0 5px #ffc0cb,
+ 0 0 8px #ffc0cb,
+ 0 0 12px #fc3c51,
+ 0 0 15px #fc3c51,
+ 0 0 17px #fc3c51,
+ 0 0 19px #fc3c51;
+          box-shadow: 0 0 7px #fff,
+ 0 0 3px #fff0f5,
+ 0 0 5px #ffc0cb,
+ 0 0 8px #ffc0cb,
+ 0 0 12px #fc3c51,
+ 0 0 15px #fc3c51,
+ 0 0 17px #fc3c51,
+ 0 0 19px #fc3c51;
+}
+
+/********** End of Sale Items Section **********/
+@media (min-width: 768px) and (max-width: 1199.87px) {
+  .items-wrapper .sale-items {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .items-wrapper .sale-items {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+}
+
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+/********** START OF SERVICES SECTION **********/
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  margin: 10%;
+}
+
+.services h2 {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 15px;
+}
+
+.services li {
+  font-family: "Monda", sans-serif;
+  line-height: 1.75rem;
+}
+
+/********** END OF SERVICES SECTION **********/
+/********** START OF CONTACT FORM **********/
+div {
+  background-color: #000;
+  color: whitesmoke;
+}
+
+div h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+div .contact-form {
+  font-family: "Monda", sans-serif;
+  background-color: #43485E;
+  margin: 5% 10%;
+  padding: 3%;
+  border-radius: 20px;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+div .contact-form label {
+  font-size: 0.9em;
+}
+
+div .contact-form input {
+  width: 50%;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0 0 0 10px;
+  border: none;
+}
+
+div .contact-form select {
+  border-radius: 10px;
+  border: none;
+}
+
+div .contact-form select:hover {
+  background: #43485E;
+}
+
+/********** END OF CONTACT FORM **********/
+/*# sourceMappingURL=styles.css.map */

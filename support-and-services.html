@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/body.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/support-and-services.css"/>
+    <link rel="stylesheet" href="./css/styles.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -36,7 +33,9 @@
           <li><a href="sales.html" aria-hidden="true">SALE</a></li>
           <li><a href="#" aria-hidden="true">FEATURED</a></li>
           <li>
-            <a href="support-and-services.html" aria-hidden="true">SUPPORT & SERVICES</a>
+            <a href="support-and-services.html" aria-hidden="true"
+              >SUPPORT & SERVICES</a
+            >
           </li>
         </ul>
       </nav>
@@ -44,25 +43,41 @@
     <!-- End of Navigation -->
     <!-- Start of List of Services -->
     <aside class="services">
-        <ul>
-            <h1>Services</h1>
-           <li>PC Building</li>
-           <li>Virus Removal</li>
-           <li>Hardware Repairs</li>
-           <li>Accessories Repair</li>
-           <li>Data Recovery</li>
-           <li>Customization</li>
-           <li>Computer Maintenance Services</li>
-        </ul>
+      <ul>
+        <h2>Services</h2>
+        <li>PC Building</li>
+        <li>Virus Removal</li>
+        <li>Hardware Repairs</li>
+        <li>Accessories Repair</li>
+        <li>Data Recovery</li>
+        <li>Customization</li>
+        <li>Computer Maintenance Services</li>
+      </ul>
     </aside>
     <!-- End of List of Services -->
     <!-- Start of Contact Form -->
-    <form class="contact-form">
-        <label for="fName">First Name</label>
-        <input type="text" id="fName" placeholder="First Name">
-        <label for="lName">Last Name</label>
-        <input type="text" id="lName" placeholder="Last Name">
-    </form>
+    <div>
+      <form class="contact-form">
+        <h2>Contact Us</h2>
+        <label for="fName">First Name: </label>
+            <input type="text" id="fName" placeholder="First Name" /><br>
+        <label for="lName">Last Name: </label>
+            <input type="text" id="lName" placeholder="Last Name" /><br>
+        <label for="reason">Reason for contacting us: </label>
+            <select>
+                <option value="PC Building">PC Building</option>
+                <option value="Virus Removal">Virus Removal</option>
+                <option value="Hardware Repairs">Hardware Repairs</option>
+                <option value="Accessories Repair">Accessories Repair</option>
+                <option value="Data Recovery">Data Recovery</option>
+                <option value="Customization">Customization</option>
+                <option value="Computer Maintenance Services">Computer Maintenance Services</option>
+                <option value="Other">Other</option>
+            </select><br>
+        <label for="message">Message: </label><br>
+            <textarea rows="5" columns="50"></textarea>
+      </form>
+    </div>
     <!-- End of Contact Form -->
     <!-- Start of Footer Section -->
     <footer>
@@ -70,7 +85,11 @@
         <li><a href="index.html" aria-hidden="true">Home</a></li>
         <li><a href="sales.html" aria-hidden="true">Sale</a></li>
         <li><a href="#" aria-hidden="true">Featured</a></li>
-        <li><a href="support-and-services.html" aria-hidden="true">Support & Services</a></li>
+        <li>
+          <a href="support-and-services.html" aria-hidden="true"
+            >Support & Services</a
+          >
+        </li>
         <li><a href="#" aria-hidden="true">About</a></li>
       </ul>
       <div class="social-media social-media-text">

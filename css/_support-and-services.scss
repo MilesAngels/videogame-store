@@ -1,0 +1,61 @@
+/********** TYPOGRAPHY **********/
+$roboto: 'Roboto Slab', serif;
+$monda: "Monda", sans-serif;
+/********** END OF TYPOGRAPHY **********/
+
+/********** START OF SERVICES SECTION **********/
+.services {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    margin: 10%;
+    h2 {
+        font-family: $roboto;
+        margin-bottom: 15px;
+    }
+    li {
+        font-family: $monda;
+        line-height: 1.75rem;
+    }
+}
+/********** END OF SERVICES SECTION **********/
+
+/********** START OF CONTACT FORM **********/
+div {
+    background-color: #000;
+    color: whitesmoke;
+    h2 {
+        font-family: $roboto;
+    }
+    .contact-form {
+        //color: whitesmoke;
+        font-family: $monda;
+        background-color: #43485E;
+        margin: 5% 10%;
+        padding: 3%;
+        border-radius: 20px;
+        line-height: 2.5rem;
+        text-align: center;
+        label {
+            font-size: 0.9em;
+        }
+        input {
+            width: 50%;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 0 0 0 10px;
+            border: none;
+        }
+        select {
+            border-radius: 10px;
+            border: none;
+            //background-color: #43485E;
+        }
+        select:hover {
+            background: #43485E;
+        }
+    }
+}
+
+/********** END OF CONTACT FORM **********/
