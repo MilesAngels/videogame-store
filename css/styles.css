@@ -328,6 +328,7 @@ li, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10%;
 }
 
 .banner2 .outer-diamond {
@@ -420,6 +421,9 @@ li, a {
   }
   .featured-items {
     margin: 0;
+  }
+  .banner2 {
+    padding-top: 10%;
   }
 }
 
@@ -753,7 +757,8 @@ div .contact-form select {
 }
 
 div .contact-form select option:hover {
-  background-color: #43485E !important;
+  background-color: green !important;
+  color: #000 !important;
 }
 
 div .contact-form textarea {

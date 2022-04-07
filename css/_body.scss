@@ -166,6 +166,7 @@ $banner-height: calc(100vh - 40vh);
     background-size: cover;
     align-items: center;
     justify-content: center;
+    padding-top: 10%;
     .outer-diamond {//found a bug with transform
         z-index: 3;
         width: 300px;
@@ -261,6 +262,9 @@ $banner-height: calc(100vh - 40vh);
     .featured-items {
         //flex-direction: row;
         margin: 0;
+    }
+    .banner2 {
+        padding-top: 10%;
     }
 
 }
