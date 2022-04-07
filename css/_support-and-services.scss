@@ -50,10 +50,17 @@ div {
         select {
             border-radius: 10px;
             border: none;
-            //background-color: #43485E;
+            outline: none;
+            text-align: center;
+            //background-color: none;
+            option:hover {
+                background-color: #43485E !important;
+            }
         }
-        select:hover {
-            background: #43485E;
+        
+        textarea {
+            width: 75%;
+            height: 10vh;
         }
     }
 }

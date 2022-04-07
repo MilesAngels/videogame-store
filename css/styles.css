@@ -359,14 +359,7 @@ body {
   font-size: 10vh;
   text-align: center;
   font-family: "Roboto Slab", serif;
-  text-shadow: 0 0 7px #fff,
- 0 0 10px #111,
- 0 0 21px #111,
- 0 0 42px #fc3c51,
- 0 0 82px #fc3c51,
- 0 0 92px #fc3c51,
- 0 0 102px #fc3c51,
- 0 0 151px #fc3c51;
+  text-shadow: 0 0 7px #fff, 0 0 10px #111, 0 0 21px #111, 0 0 42px #fc3c51, 0 0 82px #fc3c51, 0 0 92px #fc3c51, 0 0 102px #fc3c51, 0 0 151px #fc3c51;
   padding: 15% 5%;
 }
 
@@ -449,7 +442,7 @@ body {
     padding-bottom: 10%;
   }
   .featured-items .row {
-    -ms-grid-columns: (minmax(150px, 350px));
+    -ms-grid-columns: (minmax(150px, 350px))[2] !important;
         grid-template-columns: repeat(2, minmax(150px, 350px)) !important;
     -ms-grid-rows: minmax(100px, max-content);
         grid-template-rows: minmax(100px, -webkit-max-content);
@@ -671,22 +664,8 @@ h1 {
 }
 
 .items-wrapper .sale-items .item-cards:hover {
-  -webkit-box-shadow: 0 0 7px #fff,
- 0 0 3px #fff0f5,
- 0 0 5px #ffc0cb,
- 0 0 8px #ffc0cb,
- 0 0 12px #fc3c51,
- 0 0 15px #fc3c51,
- 0 0 17px #fc3c51,
- 0 0 19px #fc3c51;
-          box-shadow: 0 0 7px #fff,
- 0 0 3px #fff0f5,
- 0 0 5px #ffc0cb,
- 0 0 8px #ffc0cb,
- 0 0 12px #fc3c51,
- 0 0 15px #fc3c51,
- 0 0 17px #fc3c51,
- 0 0 19px #fc3c51;
+  -webkit-box-shadow: 0 0 7px #fff, 0 0 3px #fff0f5, 0 0 5px #ffc0cb, 0 0 8px #ffc0cb, 0 0 12px #fc3c51, 0 0 15px #fc3c51, 0 0 17px #fc3c51, 0 0 19px #fc3c51;
+          box-shadow: 0 0 7px #fff, 0 0 3px #fff0f5, 0 0 5px #ffc0cb, 0 0 8px #ffc0cb, 0 0 12px #fc3c51, 0 0 15px #fc3c51, 0 0 17px #fc3c51, 0 0 19px #fc3c51;
 }
 
 /********** End of Sale Items Section **********/
@@ -766,10 +745,17 @@ div .contact-form input {
 div .contact-form select {
   border-radius: 10px;
   border: none;
+  outline: none;
+  text-align: center;
 }
 
-div .contact-form select:hover {
-  background: #43485E;
+div .contact-form select option:hover {
+  background-color: #43485E !important;
+}
+
+div .contact-form textarea {
+  width: 75%;
+  height: 10vh;
 }
 
 /********** END OF CONTACT FORM **********/
