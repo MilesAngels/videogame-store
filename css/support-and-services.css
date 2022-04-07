@@ -1,0 +1,32 @@
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
+/********** START OF SERVICES SECTION **********/
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  margin: 10%;
+}
+
+.services h1 {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 15px;
+}
+
+.services li {
+  font-family: "Monda", sans-serif;
+  line-height: 1.75rem;
+}
+
+/********** END OF SERVICES SECTION **********/
+/********** START OF CONTACT FORM **********/
+.contact-form {
+  background-color: #43485E;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=support-and-services.css.map */
