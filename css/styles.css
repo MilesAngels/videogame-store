@@ -166,7 +166,6 @@ li, a {
   color: whitesmoke;
   background-color: #43485E;
   text-align: center;
-  line-height: 5rem;
 }
 
 .hero .row {
@@ -174,7 +173,7 @@ li, a {
 }
 
 .hero .hero-text {
-  background-color: #43485E;
+  background-color: transparent;
   margin: 0 auto;
   width: 100%;
   padding: 3vh 0;
@@ -186,6 +185,7 @@ li, a {
   font-size: 10vh;
   font-family: "Roboto Slab", serif;
   text-shadow: 3px 4px #000;
+  padding: 5vh;
 }
 
 .hero .hero-text h2 {
@@ -213,7 +213,7 @@ li, a {
 /********** END OF HERO SECTION **********/
 /********** FEATURED SECTION **********/
 .featured-items {
-  margin-top: 30vh;
+  margin-top: 50vh;
   color: whitesmoke;
   display: -ms-grid;
   display: grid;
@@ -224,6 +224,7 @@ li, a {
 
 .featured-items .featured-card-one, .featured-items .featured-card-two {
   text-align: center;
+  background-color: transparent;
   margin: 10%;
 }
 
@@ -338,6 +339,7 @@ li, a {
           box-shadow: 0px 0px 30px #fc3c51;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  overflow: hidden;
 }
 
 .banner2 .outer-diamond .banner2-sale {
@@ -404,10 +406,9 @@ li, a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 4rem;
   }
   .hero .hero-text {
-    margin-top: 15%;
+    margin-top: 35%;
     width: 45%;
   }
   .hero .hero-img {
@@ -593,14 +594,6 @@ footer .social-media-text {
 /********** Sale Items Section **********/
 /********** TYPOGRAPHY **********/
 /********** END OF TYPOGRAPHY **********/
-h1 {
-  font-family: "Roboto Slab", serif;
-  color: whitesmoke;
-  text-align: center;
-  line-height: 2.75rem;
-  margin: 5% 0;
-}
-
 .items-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +704,7 @@ h1 {
 .services h2 {
   font-family: "Roboto Slab", serif;
   margin-bottom: 15px;
+  font-size: 3rem;
 }
 
 .services li {
@@ -765,7 +759,20 @@ div .contact-form select option:hover {
 div .contact-form textarea {
   width: 75%;
   height: 10vh;
+  border-radius: 20px;
+  border: none;
 }
 
 /********** END OF CONTACT FORM **********/
+@media (min-width: 768px) and (max-width: 1199.87px) {
+  div .contact-form {
+    margin: 5% 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  div .contact-form {
+    margin: 5% 30%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
