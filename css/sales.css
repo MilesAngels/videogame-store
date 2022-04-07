@@ -77,6 +77,12 @@ h1 {
   border-radius: 15px;
   background-color: #111;
   border: none;
+  font-style: "Monda", sans-serif;
+}
+
+.items-wrapper .sale-items .item-cards:hover {
+  -webkit-box-shadow: 0 0 7px #fff, 0 0 3px #fff0f5, 0 0 5px #ffc0cb, 0 0 8px #ffc0cb, 0 0 12px #fc3c51, 0 0 15px #fc3c51, 0 0 17px #fc3c51, 0 0 19px #fc3c51;
+          box-shadow: 0 0 7px #fff, 0 0 3px #fff0f5, 0 0 5px #ffc0cb, 0 0 8px #ffc0cb, 0 0 12px #fc3c51, 0 0 15px #fc3c51, 0 0 17px #fc3c51, 0 0 19px #fc3c51;
 }
 
 /********** End of Sale Items Section **********/

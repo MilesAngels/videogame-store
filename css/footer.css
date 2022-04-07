@@ -1,3 +1,5 @@
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
 /********** FOOTER SECTION **********/
 footer {
   width: 100%;
@@ -69,7 +71,7 @@ footer .social-media-text {
   color: #8C92AC;
   font-size: 2rem;
   font-weight: 800;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 /********** END OF FOOTER SECTION **********/
@@ -88,7 +90,7 @@ footer .social-media-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 10px;
+    padding: 0 10px;
   }
 }
 

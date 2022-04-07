@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+/********** TYPOGRAPHY **********/
+$roboto: 'Roboto Slab', serif;
+$monda: "Monda", sans-serif;
+/********** END OF TYPOGRAPHY **********/
+
 li, a {
   text-decoration: none;
   list-style: none;
@@ -29,16 +34,31 @@ li, a {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Monda", sans-serif;//
+  font-family: $monda;//
   font-weight: 600;
   
   //selecting li and a elements to change it's colors and add depth by 
   //using text-shadow
   li  a {
-    //color: #931656;
+    //margin-bottom: 5px;
+    display: inline-block;
     color: whitesmoke;
     text-shadow: 2px 2px #000;
   }
+  
+  //underline effect on hover set-up
+  li a::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px whitesmoke;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+  }
+
+  li a:hover::after {
+    transform: scaleX(1);
+  }
+  
 }
 
 //set logo width in the navigation

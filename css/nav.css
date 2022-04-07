@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+/********** TYPOGRAPHY **********/
+/********** END OF TYPOGRAPHY **********/
 li, a {
   text-decoration: none;
   list-style: none;
@@ -32,8 +34,26 @@ li, a {
 }
 
 .primary-nav li a {
+  display: inline-block;
   color: whitesmoke;
   text-shadow: 2px 2px #000;
+}
+
+.primary-nav li a::after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px whitesmoke;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.primary-nav li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .logo {
