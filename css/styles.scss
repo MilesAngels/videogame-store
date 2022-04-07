@@ -1,5 +1,40 @@
+/********** TYPOGRAPHY **********/
+$roboto: 'Roboto Slab', serif;
+$monda: "Monda", sans-serif;
+/********** END OF TYPOGRAPHY **********/
+/********** RESETS **********/
+//select all to remove margin and padding anywhere
+//necessary reset
+* {
+    margin: 0;
+    padding: 0;
+    //used for testing purposes
+    // background: #000 !important; 
+    // color: #0f0 !important;
+    // outline: solid #f00 1px !important;
+}
+
+//slecting the body to set background color and remove any overflow
+body {
+    background-color: #000;
+    overflow-x: hidden;
+    
+}
+/********** END OF RESETS **********/
+
+
+//will be reused
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
 @import "nav";
 @import "body";
 @import "footer";
 @import "sales";
 @import "support-and-services";
+
