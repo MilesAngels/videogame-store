@@ -8,7 +8,7 @@
     color: whitesmoke;
     background-color: #43485E;
     text-align: center;
-    line-height: 3rem;
+    line-height: 5rem;
     //margin-bottom: 20px;
     .row {
         background-color: #43485E;
@@ -132,6 +132,7 @@ $banner-height: calc(100vh - 40vh);
     position: relative;
 
     .banner1-text {
+        background-color: transparent;
         color: whitesmoke;
         position: absolute;
         bottom: 2vh;
