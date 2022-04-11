@@ -8,7 +8,7 @@ footer {
     width: 100%;
     height: 25vh;
     color: whitesmoke;
-    margin: 10% auto;
+    margin: 5% auto;
     .footer-nav {
         //display: inline-block;
         display: flex;
@@ -69,6 +69,7 @@ footer {
 
 
 /********** MEDIA QUERIES **********/
+//@media(min-width: 768) and 
 @media (min-width: 1200px) {
     footer {
         height: 5vh;
