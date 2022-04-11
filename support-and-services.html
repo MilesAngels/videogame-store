@@ -13,6 +13,8 @@
     <title>Gamerule Ø</title>
   </head>
   <body>
+
+
     <!-- Start of Navigation -->
     <header class="primary-header flex">
       <a href="index.html"
@@ -41,10 +43,13 @@
       </nav>
     </header>
     <!-- End of Navigation -->
+    <video playsinline autoplay loop>
+      <source src="./img/colorful-squares.mp4">
+    </video>
     <!-- Start of List of Services -->
     <aside class="services">
       <ul>
-        <h2>Services</h2>
+        <h2>Support & Services</h2>
         <li>PC Building</li>
         <li>Virus Removal</li>
         <li>Hardware Repairs</li>
@@ -58,12 +63,10 @@
     <!-- Start of Contact Form -->
     <div>
       <form class="contact-form">
-        <h2>Contact Us</h2>
-        <label for="fName">First Name: </label>
-            <input type="text" id="fName" placeholder="First Name" /><br>
-        <label for="lName">Last Name: </label>
-            <input type="text" id="lName" placeholder="Last Name" /><br>
-        <label for="reason">Reason for contacting us: </label>
+        <h2>REACH US RIGHT HERE</h2>
+        <label for="fName">Name: </label><br>
+            <input type="text" id="name" placeholder="Full Name" /><br>
+        <label for="reason">Reason for contacting us: </label><br>
             <select>
                 <option value="PC Building">PC Building</option>
                 <option value="Virus Removal">Virus Removal</option>
@@ -75,7 +78,8 @@
                 <option value="Other">Other</option>
             </select><br>
         <label for="message">Message: </label><br>
-            <textarea></textarea>
+            <textarea></textarea><br>
+        <button id="form-submit"><a>SUBMIT</a></button>
       </form>
     </div>
     <!-- End of Contact Form -->

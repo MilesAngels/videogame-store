@@ -3,6 +3,17 @@ $roboto: 'Roboto Slab', serif;
 $monda: "Monda", sans-serif;
 /********** END OF TYPOGRAPHY **********/
 
+/********** VIDEO BACKGROUND **********/
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -20;
+    background-size: contain;
+}
+
+/********** END VIDEO BACKGROUND **********/
+
 /********** START OF SERVICES SECTION **********/
 .services {
     display: flex;
@@ -12,7 +23,7 @@ $monda: "Monda", sans-serif;
     margin: 10%;
     h2 {
         font-family: $roboto;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
         font-size: 3rem;
     }
     li {
@@ -24,36 +35,46 @@ $monda: "Monda", sans-serif;
 
 /********** START OF CONTACT FORM **********/
 div {
-    background-color: #000;
+    background-color: transparent;
     color: whitesmoke;
+
     h2 {
         font-family: $roboto;
+        padding: 20px 0;
+        font-size: 2rem;
+        text-align: center;
+    
     }
     .contact-form {
         //color: whitesmoke;
         font-family: $monda;
         background-color: #43485E;
         margin: 5% 10%;
-        padding: 3%;
+        padding: 5%;
         border-radius: 20px;
-        line-height: 2.5rem;
-        text-align: center;
+        line-height: 2rem;
+        //text-align: center;
         label {
             font-size: 0.9em;
+            //line-height: 1.75rem;
         }
         input {
-            width: 50%;
+            width: 100%;
             font-size: 1rem;
             border-radius: 10px;
-            padding: 0 0 0 10px;
+            padding: 5px 0;
             border: none;
+            text-align: center;
         }
         select {
+            width: 100%;
             border-radius: 10px;
             border: none;
             outline: none;
             text-align: center;
             //background-color: none;
+            padding: 5px 0;
+            font-size: 1rem;
             option:hover {
                 background-color: green !important;
                 color: #000 !important;
@@ -61,10 +82,19 @@ div {
         }
         
         textarea {
-            width: 75%;
-            height: 10vh;
+            width: 100%;
+            height: 20vh;
             border-radius: 20px;
             border: none;
+        }
+
+        #form-submit {
+            width: 70px;
+            padding: 5px 0;
+            background-color: transparent;
+            color: whitesmoke;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
         }
     }
 }
