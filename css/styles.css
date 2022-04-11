@@ -333,8 +333,8 @@ li, a {
 
 .banner2 .outer-diamond {
   z-index: 3;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: 10px solid whitesmoke;
   -webkit-box-shadow: 0px 0px 30px #fc3c51;
           box-shadow: 0px 0px 30px #fc3c51;
@@ -348,8 +348,8 @@ li, a {
   display: -ms-flexbox;
   display: flex;
   z-index: 3;
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   border: 3px solid #43485E;
   outline: 1px solid whitesmoke;
   -webkit-box-align: center;
@@ -358,7 +358,7 @@ li, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 8%;
+  margin: 12px;
 }
 
 .banner2 .outer-diamond .banner2-sale p {
